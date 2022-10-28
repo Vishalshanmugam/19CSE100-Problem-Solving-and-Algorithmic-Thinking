@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="umaks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:31:17 AM"/>
+        <attribute name="created" value="dW1ha3M7REVTS1RPUC1IVEI1RUJOOzIwMjItMTAtMjg7MTA6MDg6MDIgQU07Mjg3Mw=="/>
+        <attribute name="edited" value="dW1ha3M7REVTS1RPUC1IVEI1RUJOOzIwMjItMTAtMjg7MTA6MzE6MTcgQU07MTsyOTgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;roll&quot;" newline="True"/>
+            <declare name="rll" type="Integer" array="False" size=""/>
+            <input variable="rll"/>
+            <output expression="&quot;Name&quot;" newline="True"/>
+            <declare name="nm" type="String" array="False" size=""/>
+            <input variable="nm"/>
+            <output expression="&quot;address&quot;" newline="True"/>
+            <declare name="add" type="String" array="False" size=""/>
+            <input variable="add"/>
+            <output expression="&quot;blood group&quot;" newline="True"/>
+            <declare name="bldgrp" type="String" array="False" size=""/>
+            <input variable="bldgrp"/>
+            <output expression="&quot;phone number&quot;" newline="True"/>
+            <declare name="phnnmb" type="Integer" array="False" size=""/>
+            <input variable="phnnmb"/>
+            <output expression="&quot;department assigned&quot;" newline="True"/>
+            <declare name="dprtass" type="String" array="False" size=""/>
+            <input variable="dprtass"/>
+        </body>
+    </function>
+</flowgorithm>
