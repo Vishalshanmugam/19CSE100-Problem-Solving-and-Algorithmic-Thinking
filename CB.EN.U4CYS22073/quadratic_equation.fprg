@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22073"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:48:05 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4MTsyMDIyLTExLTA0OzA5OjQwOjU0IEFNOzMwNjM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4MTsyMDIyLTExLTA0OzEwOjQ4OjA1IEFNOzU7MzE3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="finding the roots of the quadratic equation"/>
+            <declare name="root1" type="Real" array="False" size=""/>
+            <declare name="root2" type="Real" array="False" size=""/>
+            <comment text="declaring the constants for the variables of the quadratic eqaution"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value for the constant of the variable x^2&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value for the constant of the variable x&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value for the constant for the quadratic equation&quot;" newline="True"/>
+            <input variable="c"/>
+            <comment text="solving the quadratic equation with the given values for the constants"/>
+            <output expression="&quot;The given quadratic equation is &quot;&amp;a&amp;&quot;x^2+&quot;&amp;b&amp;&quot;x+&quot;&amp;c&amp;&quot; &quot;" newline="True"/>
+            <assign variable="root1" expression="(-b+sqrt(b*b-4*a*c))/2*a"/>
+            <assign variable="root2" expression="(-b-sqrt(b*b-4*a*c))/2*a"/>
+            <output expression="&quot;One of the root of the quadratic equation assigned here is x = &quot;&amp;root1" newline="True"/>
+            <output expression="&quot;The second root of the quadratic equation assigned here is x = &quot;&amp;root2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

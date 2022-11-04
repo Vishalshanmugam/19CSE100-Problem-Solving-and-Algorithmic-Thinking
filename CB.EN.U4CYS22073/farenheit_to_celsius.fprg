@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22073"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:50:32 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4MTsyMDIyLTExLTA0OzA5OjA2OjIzIEFNOzMwNjE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4MTsyMDIyLTExLTA0OzEwOjUwOjMyIEFNOzEwOzMyMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="conversion of farenheit to celsius "/>
+            <declare name="faren" type="Real" array="False" size=""/>
+            <declare name="cels" type="Real" array="False" size=""/>
+            <comment text="entering the farenheit value"/>
+            <output expression="&quot;Enter the temperature value in degree Celsius&quot;" newline="True"/>
+            <input variable="cels"/>
+            <assign variable="faren" expression="(9/5)*cels + 32"/>
+            <output expression="&quot;The Farenheit conversion of the temperature given in Celsius is &quot; &amp;faren" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
