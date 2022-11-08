@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="umaks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-08 03:13:23 PM"/>
+        <attribute name="created" value="dW1ha3M7REVTS1RPUC1IVEI1RUJOOzIwMjItMTEtMDg7MDI6NTc6MzAgUE07Mjg5Mw=="/>
+        <attribute name="edited" value="dW1ha3M7REVTS1RPUC1IVEI1RUJOOzIwMjItMTEtMDg7MDM6MTM6MjMgUE07MTsyOTk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="q" type="Integer" array="False" size=""/>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of the dividend&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the value of the divisors&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="q" expression="a/b"/>
+            <assign variable="r" expression="a-(q*b)"/>
+            <output expression="&quot;The value of a(mod b) is &quot;&amp;r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

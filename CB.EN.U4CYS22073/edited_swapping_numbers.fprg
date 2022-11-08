@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="umaks"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-08 02:57:15 PM"/>
+        <attribute name="created" value="dW1ha3M7REVTS1RPUC1IVEI1RUJOOzIwMjItMTEtMDg7MDI6NDk6NDIgUE07Mjg5Nw=="/>
+        <attribute name="edited" value="dW1ha3M7REVTS1RPUC1IVEI1RUJOOzIwMjItMTEtMDg7MDI6NTc6MTUgUE07MTszMDA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of integer a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;a = &quot;&amp;a" newline="True"/>
+            <output expression="&quot;Enter the value of the ineger b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;b = &quot;&amp;b" newline="True"/>
+            <assign variable="a" expression="a*b"/>
+            <assign variable="b" expression="a/b"/>
+            <assign variable="a" expression="a/b"/>
+            <output expression="&quot;the value of the integer a is &quot;&amp;a" newline="True"/>
+            <output expression="&quot;the value of the integer b is &quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
