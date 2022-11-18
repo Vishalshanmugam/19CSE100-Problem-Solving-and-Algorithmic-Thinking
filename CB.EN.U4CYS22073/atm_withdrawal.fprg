@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22073"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:06:39 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4MTsyMDIyLTExLTE4OzA5OjA4OjAzIEFNOzMwNjY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4MTsyMDIyLTExLTE4OzEwOjA2OjM5IEFNOzE7MzE3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="atm program"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter ATM card number&quot;" newline="True"/>
+            <input variable="num"/>
+            <if expression="num = 123456789">
+                <then>
+                    <declare name="pin" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Enter the pin number&quot;" newline="True"/>
+                    <input variable="pin"/>
+                    <if expression="pin = 1234">
+                        <then>
+                            <declare name="amt" type="Integer" array="False" size=""/>
+                            <output expression="&quot;Enter the amount for the withdrawal&quot;" newline="True"/>
+                            <input variable="amt"/>
+                            <comment text="assuming the account has only 10000 in it"/>
+                            <if expression="amt&lt;=10000">
+                                <then>
+                                    <output expression="&quot;the amount you want to withdraw is&quot;&amp;amt" newline="True"/>
+                                    <declare name="bal" type="Integer" array="False" size=""/>
+                                    <assign variable="bal" expression="10000-amt"/>
+                                    <output expression="&quot;the account balance is &quot;&amp;bal" newline="True"/>
+                                    <input variable="bal"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;You have exceeded the account balance&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;The entered pin number is invalid for this account&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;The ATM card number entered is invalid&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
