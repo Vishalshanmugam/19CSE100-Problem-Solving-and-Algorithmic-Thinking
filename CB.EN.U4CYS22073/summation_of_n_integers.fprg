@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22073"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:08:13 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4NzsyMDIyLTEyLTAyOzA5OjA5OjIwIEFNOzMwNjY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4NzsyMDIyLTEyLTAyOzEwOjA4OjEzIEFNOzE7MzE2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="sumation of n integers from 0"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the nth integer&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="s" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="s" expression="s+i"/>
+            </for>
+            <output expression="&quot;the summation is &quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
