@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22073"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:33:36 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4NzsyMDIyLTEyLTAyOzEwOjEwOjEwIEFNOzMwNDk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4NzsyMDIyLTEyLTAyOzEwOjMzOjM2IEFNOzM7MzE3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring integers x and y"/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <declare name="s" type="Integer" array="False" size=""/>
+            <for variable="x" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;the addition table of &quot;&amp;x&amp;&quot; is&quot;" newline="True"/>
+                <for variable="y" start="1" end="10" direction="inc" step="1">
+                    <assign variable="s" expression="x+y"/>
+                    <output expression="x&amp;&quot;+&quot;&amp;y&amp;&quot;=&quot;&amp;s" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

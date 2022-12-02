@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22073"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 11:01:10 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4NzsyMDIyLTEyLTAyOzEwOjM1OjU4IEFNOzMwNjg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MzsyMDIyMjNNQVlDMDA4NzsyMDIyLTEyLTAyOzExOjAxOjEwIEFNOzE7MzE1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter fibonacci value&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <assign variable="j" expression="1"/>
+            <declare name="k" type="Integer" array="False" size=""/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <for variable="m" start="1" end="n" direction="inc" step="1">
+                <assign variable="k" expression="i+j"/>
+                <assign variable="i" expression="j"/>
+                <assign variable="j" expression="k"/>
+            </for>
+            <output expression="&quot;the fibonacci series till the nth number is &quot;&amp;k" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
